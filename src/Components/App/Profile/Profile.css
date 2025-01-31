@@ -1,0 +1,19 @@
+.profile {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.profile__image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.profile__title {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}

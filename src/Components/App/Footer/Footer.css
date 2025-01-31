@@ -1,4 +1,44 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  height: 111px;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.footer__text {
+  font-size: 14px;
+}
+
+.footer__contact {
+  display: flex;
+  gap: 40px;
+}
+
+.footer__write_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.footer__email-link {
+  margin-top: 10px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.footer__follow-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__follow-text,
+.footer__email-text {
+  font-weight: bold;
+  font-size: 14px;
 }

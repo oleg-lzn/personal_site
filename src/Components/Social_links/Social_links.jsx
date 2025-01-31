@@ -1,8 +1,9 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import "./Social_links.css";
 
 function SocialLinks() {
   return (
-    <div className="social-links">
+    <div className="social_links">
       <a
         href="https://www.linkedin.com/in/luzeninoleg/"
         target="_blank"

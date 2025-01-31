@@ -1,17 +1,13 @@
 import "./Profile.css";
+import SocialLinks from "../../Social_links/social_links";
+import avatar from "../../../assets/images/avatar.jpg";
 
-function Profile({ props }) {
+function Profile() {
   return (
     <div className="profile">
-      <div className="profile__container">
-        <img src="" alt="" className="profile__image" />
-        <h2 className="profile__title">Oleg Luzenin</h2>
-        <div className="profile__contacts">
-          <button className="github">Github pic</button>
-          <button className="linkedin"> Linkedin pic </button>
-          <button className="linkedin"> email </button>
-        </div>
-      </div>
+      <img src={avatar} alt="Photo of Oleg" className="profile__image" />
+      <h2 className="profile__title">Oleg Luzenin</h2>
+      <SocialLinks />
     </div>
   );
 }

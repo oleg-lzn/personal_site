@@ -1,10 +1,11 @@
 import "./Header.css";
 import NavBar from "../NavBar/NavBar";
+import Logo from "../Logo/Logo";
 
 function Header({ props }) {
   return (
     <div className="header">
-      <button className="header__icon-button"> Here will be Icon</button>
+      <Logo />
       <NavBar />
     </div>
   );

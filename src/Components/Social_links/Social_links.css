@@ -1,0 +1,18 @@
+.social_links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.social_links a {
+  color: black;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social_links a:hover {
+  transform: scale(1.2);
+}
