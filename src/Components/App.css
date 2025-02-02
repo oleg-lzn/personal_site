@@ -42,7 +42,7 @@
 } */
 
 .app {
-  background-color: #f3f3f3;
+  background-color: #87ceeb;
 }
 
 .app__wrapper {
@@ -52,6 +52,7 @@
   margin: 0 auto;
   padding: 100px 40px 0;
   min-height: 100vh;
+  background: linear-gradient(to right, #437dff 30%, #ffffff 30%);
 }
 
 @media screen and (max-width: 700px) {
