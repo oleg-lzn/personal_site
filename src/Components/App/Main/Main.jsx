@@ -3,7 +3,7 @@ import "./Main.css";
 import { Link } from "react-router-dom";
 import { routes } from "../../../utils/routes";
 
-function Main({ children }) {
+function Main() {
   return (
     <div className="main">
       <Profile />

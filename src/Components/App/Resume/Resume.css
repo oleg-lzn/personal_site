@@ -1,0 +1,35 @@
+.resume {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: MontSerrat, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.resume__contacts {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.resume__contact {
+  color: blue;
+  text-decoration: none;
+}
+
+.resume__section {
+  margin-bottom: 20px;
+}
+
+.resume__section-title {
+  font-size: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.resume__job,
+.resume__project {
+  margin-bottom: 10px;
+}

@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import { routes } from "../utils/routes";
 import PageNotFound from "./App/PageNotFound/PageNotFound";
 import Projects from "./App/Projects/Projects";
+import Resume from "./App/Resume/Resume";
+import Contact from "./App/Contact/Contact";
 
 function App() {
   return (
@@ -16,9 +18,9 @@ function App() {
           <Routes>
             <Route path="*" element={<PageNotFound />} />
             <Route path={routes.aboutme} element={<Main />} />
-            {/* <Route path={routes.contact} element={<Contact />} /> */}
+            <Route path={routes.contact} element={<Contact />} />
             <Route path={routes.projects} element={<Projects />} />
-            {/* <Route path={routes.resume} element={<Resume />} /> */}
+            <Route path={routes.resume} element={<Resume />} />
           </Routes>
           <Footer />
         </div>
