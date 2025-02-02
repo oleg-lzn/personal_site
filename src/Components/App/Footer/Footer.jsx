@@ -1,4 +1,4 @@
-import SocialLinksFooter from "../../../Social_links_footer/Social_links_footer";
+import SocialLinksFooter from "../Social_links_footer/Social_links_footer";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 

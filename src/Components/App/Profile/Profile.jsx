@@ -1,5 +1,5 @@
 import "./Profile.css";
-import SocialLinks from "../../Social_links/social_links";
+import SocialLinks from "../Social_links/Social_links";
 import avatar from "../../../assets/images/avatar.jpg";
 
 function Profile() {

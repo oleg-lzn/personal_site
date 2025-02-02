@@ -6,7 +6,7 @@ import logo_svg_t from "../../../assets/images/logo_svg_t.svg";
 function Logo() {
   return (
     <div className="header__logo">
-      <Link to={"/"}>
+      <Link to={"/aboutme"}>
         <img
           src={logo_svg_t}
           alt="header_logo"
