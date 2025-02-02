@@ -6,8 +6,8 @@ function Main({ children }) {
     <div className="main">
       <Profile />
       <section className="main__text_section">
-        <h1 className="main__title">HELLO</h1>
-        <h2 className="main__description">Here's who I am & what I do</h2>
+        <h1 className="main__title">Hello!</h1>
+        <h2 className="main__description">Here's who I am & what I do:</h2>
         <button className="main__button">Resume</button>
         <button className="main__button_white">Projects</button>
         <p className="main__text">

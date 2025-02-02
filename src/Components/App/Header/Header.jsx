@@ -4,10 +4,10 @@ import Logo from "../Logo/Logo";
 
 function Header({ props }) {
   return (
-    <div className="header">
+    <header className="header">
       <Logo />
       <NavBar />
-    </div>
+    </header>
   );
 }
 

@@ -1,9 +1,9 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import "./Social_links.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import "./Social_links_footer.css";
 
-function SocialLinks() {
+function SocialLinksFooter() {
   return (
-    <div className="profile__social-links">
+    <div className="footer__social-links">
       <a
         href="https://www.linkedin.com/in/luzeninoleg/"
         target="_blank"
@@ -18,11 +18,8 @@ function SocialLinks() {
       >
         <FaGithub size={32} />
       </a>
-      <a href="mailto:luzeninoleg2012@gmail.com">
-        <FaEnvelope size={32} />
-      </a>
     </div>
   );
 }
 
-export default SocialLinks;
+export default SocialLinksFooter;

@@ -4,6 +4,7 @@
   height: 111px;
   align-items: center;
   font-family: Montserrat, sans-serif;
+  margin-top: auto;
 }
 
 .footer__text {
@@ -41,4 +42,24 @@
 .footer__email-text {
   font-weight: bold;
   font-size: 14px;
+}
+
+.footer__follow-section_github-button {
+  background-image: url("../../../assets/images/github-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__follow-section_linkedin-button {
+  background-image: url("../../../assets/images/linked_in_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
 }
