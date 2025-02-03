@@ -9,6 +9,8 @@
 
 .footer__text {
   font-size: 14px;
+  margin: 0;
+  align-self: baseline;
 }
 
 .footer__contact {

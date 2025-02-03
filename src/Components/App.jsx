@@ -24,7 +24,6 @@ function App() {
 
   return (
     <>
-      0
       <div className="app">
         <div className="app__wrapper">
           <Header isMobile={isMobile} setMobile={setMobile} />
