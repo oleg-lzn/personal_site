@@ -8,16 +8,32 @@ import PageNotFound from "./App/PageNotFound/PageNotFound";
 import Projects from "./App/Projects/Projects";
 import Resume from "./App/Resume/Resume";
 import Contact from "./App/Contact/Contact";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [isMobile, setMobile] = useState(window.innerWidth <= 750);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 750);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
+      0
       <div className="app">
         <div className="app__wrapper">
-          <Header />
+          <Header isMobile={isMobile} setMobile={setMobile} />
           <Routes>
             <Route path="*" element={<PageNotFound />} />
-            <Route path={routes.aboutme} element={<Main />} />
+            <Route
+              path={routes.aboutme}
+              element={<Main isMobile={isMobile} />}
+            />
             <Route path={routes.contact} element={<Contact />} />
             <Route path={routes.projects} element={<Projects />} />
             <Route path={routes.resume} element={<Resume />} />

@@ -25,7 +25,6 @@ const ContactForm = () => {
     setError("");
     alert("Message sent successfully!");
 
-    // Reset form
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -39,12 +38,16 @@ const ContactForm = () => {
           </label>
           <input
             className="contact__input"
+            required
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
+            onError={error}
             placeholder="Enter your name"
+            minLength={1}
+            maxLength={35}
           />
         </div>
 
@@ -54,11 +57,13 @@ const ContactForm = () => {
           </label>
           <input
             className="contact__input"
+            required
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            onError={error}
             placeholder="Enter your email"
           />
         </div>
@@ -69,16 +74,17 @@ const ContactForm = () => {
           </label>
           <textarea
             className="contact__textarea"
+            required
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
+            onError={error}
             placeholder="Enter your message"
           />
         </div>
 
         {error && <p className="contact__error">{error}</p>}
-
         <button className="contact__button" type="submit">
           Send Message
         </button>

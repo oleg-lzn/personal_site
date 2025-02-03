@@ -5,6 +5,7 @@
   font-family: MontSerrat, sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background-color: white;
+  border-radius: 10px;
 }
 
 .resume__contacts {

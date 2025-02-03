@@ -2,7 +2,7 @@ import "./Header.css";
 import NavBar from "../NavBar/NavBar";
 import Logo from "../Logo/Logo";
 
-function Header({ props }) {
+function Header({ setMobile }) {
   return (
     <header className="header">
       <Logo />

@@ -63,3 +63,29 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 750px) {
+  .footer {
+    margin-top: 10px;
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 30px;
+  }
+
+  .footer__text {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .footer__follow-text,
+  .footer__email-text {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .footer__contact {
+    gap: 120px;
+    margin-top: 20px;
+  }
+}

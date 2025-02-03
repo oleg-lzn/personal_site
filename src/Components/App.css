@@ -57,6 +57,6 @@
 
 @media screen and (max-width: 700px) {
   .app__wrapper {
-    padding: 0 16px;
+    padding: 80px 16px 0;
   }
 }

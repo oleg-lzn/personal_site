@@ -1,10 +1,12 @@
 .contact {
   max-width: 400px;
-  margin: 0 auto;
+  width: 400px;
   padding: 20px;
-  background: #f9f9f9;
+  margin: 100px auto;
+  background: white;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: MontSerrat, sans-serif;
 }
 
 .contact__title {
@@ -16,30 +18,48 @@
 .contact__form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .contact__field {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .contact__label {
   display: block;
-  margin-bottom: 5px;
+  padding-bottom: 10px;
   font-weight: bold;
 }
 
-.contact__input,
-.contact__textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+.contact__input {
   border-radius: 4px;
   font-size: 14px;
+  padding: 0 0 0 5px;
+  margin: 0;
+  height: 28px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  cursor: text;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contact__textarea {
+  display: block;
   height: 80px;
   resize: none;
+  padding: 10px 0 0 5px;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contact__error {
@@ -49,16 +69,31 @@
 }
 
 .contact__button {
-  background: #007bff;
+  background: #437dff;
+  width: 100%;
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .contact__button:hover {
-  background: #0056b3;
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .contact {
+    max-width: 350px;
+    padding: 15px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: MontSerrat, sans-serif;
+  }
 }

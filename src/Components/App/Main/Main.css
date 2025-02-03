@@ -1,7 +1,7 @@
 .main {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   gap: 30px;
   align-items: center;
   flex: 1;
@@ -80,4 +80,31 @@
   color: white;
   background-color: #437dff;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 750px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main__title {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+
+  .main__description {
+    margin: 15px 0;
+  }
+
+  .main__text_section {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    max-width: 350px;
+  }
+
+  .main__text,
+  .main__quote {
+    margin: 15px 0;
+    line-height: 1.6;
+  }
 }

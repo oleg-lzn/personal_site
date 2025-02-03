@@ -3,7 +3,7 @@
   padding: 20px;
   font-family: Montserrat, sans-serif;
   line-height: 1.5;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .projects__title {
@@ -22,4 +22,25 @@
   gap: 30px;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .projects {
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .projects__description {
+    text-align: center;
+    margin: 10px 0 10px;
+    font-size: 14px;
+  }
+
+  .projects__list {
+    gap: 15px;
+  }
+
+  .projects__title {
+    font-size: 24px;
+  }
 }

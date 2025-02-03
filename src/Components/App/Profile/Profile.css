@@ -24,3 +24,64 @@
   font-size: 24px;
   font-weight: bold;
 }
+
+.profile__buttons {
+  display: flex;
+  margin: 20px 0 20px;
+  gap: 25px;
+}
+
+.profile__button {
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #437dff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile__button:hover {
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile__button_white {
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile__button_white:hover {
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: black;
+  background-color: white;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 700px) {
+  .profile {
+    width: 350px;
+    height: 450px;
+  }
+
+  .profile__title {
+    margin: 15px 0;
+  }
+}
