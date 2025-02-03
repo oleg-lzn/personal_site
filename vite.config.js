@@ -10,5 +10,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ["react", "react-dom", "react/jsx-runtime"],
   },
-  base: "/",
+  base: "/aboutme",
 });
