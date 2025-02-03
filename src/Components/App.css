@@ -1,5 +1,5 @@
 .app {
-  background-color: #87ceeb;
+  background: linear-gradient(to right, #437dff 30%, #ffffff 30%);
 }
 
 .app__wrapper {
@@ -9,12 +9,14 @@
   margin: 0 auto;
   padding: 100px 40px 0;
   min-height: 100vh;
-  background: linear-gradient(to right, #437dff 25%, #ffffff 25%);
 }
 
 @media screen and (max-width: 750px) {
   .app__wrapper {
     padding: 100px 16px 0;
     background: linear-gradient(to top, #437dff 15%, #ffffff 15%);
+  }
+  .app {
+    background: linear-gradient(to right, #437dff 25%, #ffffff 25%);
   }
 }
