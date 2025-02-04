@@ -1,7 +1,6 @@
 .main {
   display: flex;
   justify-content: center;
-  /* position: relative; */
   gap: 30px;
   align-items: center;
   flex: 1;

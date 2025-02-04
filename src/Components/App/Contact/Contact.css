@@ -1,12 +1,18 @@
 .contact {
-  max-width: 400px;
-  width: 400px;
-  padding: 20px;
-  margin: 100px auto;
-  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: MontSerrat, sans-serif;
+  font-family: Montserrat, sans-serif;
+  background-color: white;
+}
+
+.contact__form_container {
+  width: 400px;
+  height: auto;
+  padding: 20px;
 }
 
 .contact__title {
@@ -35,9 +41,9 @@
 .contact__input {
   border-radius: 4px;
   font-size: 14px;
-  padding: 0 0 0 5px;
+  padding: 10px;
   margin: 0;
-  height: 28px;
+  height: auto;
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.3);
   text-align: left;
@@ -46,13 +52,14 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  outline: none;
 }
 
 .contact__textarea {
   display: block;
-  height: 80px;
+  height: 100px;
   resize: none;
-  padding: 10px 0 0 5px;
+  padding: 10px;
   margin: 0;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
@@ -60,6 +67,7 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  outline: none;
 }
 
 .contact__error {
@@ -87,13 +95,9 @@
 }
 
 @media screen and (max-width: 750px) {
-  .contact {
-    max-width: 350px;
-    padding: 15px;
-    margin: 100px auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: MontSerrat, sans-serif;
+  .contact__form_container {
+    width: 280px;
+    height: auto;
+    padding: 20px;
   }
 }
