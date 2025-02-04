@@ -14,9 +14,8 @@
 @media screen and (max-width: 750px) {
   .app__wrapper {
     padding: 100px 16px 0;
-    /* background: linear-gradient(to top, #437dff 15%, #ffffff 15%); */
   }
   .app {
-    background: linear-gradient(to top, #437dff 15%, #ffffff 15%);
+    background: linear-gradient(to top, #437dff 150px, #ffffff 150px);
   }
 }
