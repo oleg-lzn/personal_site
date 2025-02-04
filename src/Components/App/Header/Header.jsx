@@ -2,7 +2,7 @@ import "./Header.css";
 import NavBar from "../NavBar/NavBar";
 import Logo from "../Logo/Logo";
 import { useState } from "react";
-import BurgerMenu from "../../Burger/BurgerMenu";
+import BurgerMenu from "../Burger/BurgerMenu";
 
 function Header({ isMobile }) {
   const [mobileMenu, openMobileMenu] = useState(false);
