@@ -1,6 +1,7 @@
 import "./PageNotFound.css";
 import { Link } from "react-router-dom";
 import cat_not_found from "../../../assets/images/cat_not_found.jpg";
+import { routes } from "../../../utils/routes";
 
 function PageNotFound() {
   return (
@@ -16,7 +17,7 @@ function PageNotFound() {
       <p className="not-found__text">
         Uh Oh! There&apos;s nothing here... Sorry 🥺
       </p>
-      <Link to="/aboutme" className="not-found__link">
+      <Link to={routes.base} className="not-found__link">
         Back to the Main Page
       </Link>
     </div>

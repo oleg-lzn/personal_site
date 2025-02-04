@@ -14,7 +14,7 @@ function NavBar({ toggleMenu, setCloseButton }) {
   return (
     <nav className="nav">
       <NavLink
-        to={routes.aboutme}
+        to={routes.base}
         className={customClassName}
         onClick={toggleButtonAndGo}
       >

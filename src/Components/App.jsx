@@ -29,10 +29,7 @@ function App() {
           <Header isMobile={isMobile} setMobile={setMobile} />
           <Routes>
             <Route path="*" element={<PageNotFound />} />
-            <Route
-              path={routes.aboutme}
-              element={<Main isMobile={isMobile} />}
-            />
+            <Route path={routes.base} element={<Main isMobile={isMobile} />} />
             <Route path={routes.contact} element={<Contact />} />
             <Route path={routes.projects} element={<Projects />} />
             <Route path={routes.resume} element={<Resume />} />

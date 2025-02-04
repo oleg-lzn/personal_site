@@ -13,7 +13,6 @@ function Projects() {
       </p>
       <ul className="projects__list">
         {projectsData.map((item) => {
-          console.log(item);
           return (
             <Project
               key={item.id}
