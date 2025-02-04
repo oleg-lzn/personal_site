@@ -7,4 +7,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
+  build: {
+    commonjsOptions: {
+      include: [/node_modules/], // Включает CommonJS модули
+    },
+  },
+  resolve: {
+    alias: {
+      "react/jsx-runtime": "react/jsx-runtime.js",
+    },
+  },
 });
