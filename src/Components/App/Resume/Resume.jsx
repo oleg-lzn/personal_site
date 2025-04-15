@@ -6,12 +6,11 @@ const Resume = () => {
       <section className="resume__section">
         <h2 className="resume__section-title">About</h2>
         <p className="resume__text">
-          Constantly learning passionate Frontend Developer with 1+ year of
-          experience in React, JavaScript and Next.js. I combine hands-on
+          Constantly learning passionate Full-Stack Developer with 1-2 years of
+          experience in Next.js, React and TypeScript. I combine hands-on
           technical skills and 5+ years overall in creating web and mobile
           products in different roles at international companies like Yandex and
-          Viber. I offer a unique dual perspective to align technical
-          implementation with business objectives.
+          Viber.
         </p>
       </section>
 
@@ -19,7 +18,8 @@ const Resume = () => {
         <h2 className="resume__section-title">Technical Skills</h2>
         <p className="resume__text">
           JavaScript · TypeScript · React · Node.js · Babel · Webpack · HTML ·
-          CSS · Git · Node Package Manager · RESTful APIs · Figma · Redux
+          CSS · Git · Node Package Manager · RESTful APIs · Figma · Redux ·
+          PostgreSQL · Vercel · MongoDB · Express
         </p>
       </section>
 
@@ -42,14 +42,14 @@ const Resume = () => {
               resulting in +25 app installs daily.
             </li>
             <li>
-              Built more than 15 notification templates in HTML/CSS, increasing
-              open rates by 15%.
+              Conducted end-to-end development of flagship product and key
+              features using Next.js, React and TypeScript.
             </li>
           </ul>
         </div>
 
         <div className="resume__job">
-          <h3 className="resume__job-title">Project Manager</h3>
+          <h3 className="resume__job-title">Tech Project Manager</h3>
           <p className="resume__job-company">Rakuten Viber, Tel Aviv, Israel</p>
           <p className="resume__job-duration">Sep 2021 - Jan 2024</p>
           <ul className="resume__job-list">
