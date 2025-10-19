@@ -1,95 +1,45 @@
-import React, { useState } from "react";
 import "./Contact.css";
 
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+import { FaTelegram } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
-  const [error, setError] = useState("");
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!formData.name || !formData.email || !formData.message) {
-      setError("All fields are required.");
-      return;
-    }
-
-    setError("");
-    alert("Message sent successfully!");
-
-    setFormData({ name: "", email: "", message: "" });
-  };
-
+const Contact = () => {
   return (
-    <div className="contact">
-      <h2 className="contact__title">Contact Oleg Luzenin</h2>
-      <div className="contact__form_container">
-        <form className="contact__form" onSubmit={handleSubmit}>
-          <div className="contact__field">
-            <label className="contact__label" htmlFor="name">
-              Name
-            </label>
-            <input
-              className="contact__input"
-              required
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              minLength={1}
-              maxLength={35}
-            />
+    <div className="contact-page">
+      <div className="contact">
+        <h2 className="contact__title">Get In Touch</h2>
+        <div className="contact__container">
+          <div className="contact__item">
+            <div className="contact__icon contact__icon--gmail">
+              <SiGmail />
+            </div>
+            <div className="contact__info">
+              <h3>Email</h3>
+              <a href="mailto:luzeninoleg2012@gmail.com">
+                luzeninoleg2012@gmail.com
+              </a>
+            </div>
           </div>
 
-          <div className="contact__field">
-            <label className="contact__label" htmlFor="email">
-              Email
-            </label>
-            <input
-              className="contact__input"
-              required
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-            />
+          <div className="contact__item">
+            <div className="contact__icon contact__icon--telegram">
+              <FaTelegram />
+            </div>
+            <div className="contact__info">
+              <h3>Telegram</h3>
+              <a
+                href="https://t.me/oleg_lzn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @oleg_lzn
+              </a>
+            </div>
           </div>
-
-          <div className="contact__field">
-            <label className="contact__label" htmlFor="message">
-              Message
-            </label>
-            <textarea
-              className="contact__textarea"
-              required
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Enter your message"
-            />
-          </div>
-
-          {error && <p className="contact__error">{error}</p>}
-          <button className="contact__button" type="submit">
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   );
 };
 
-export default ContactForm;
+export default Contact;
