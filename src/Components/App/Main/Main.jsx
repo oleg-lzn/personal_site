@@ -21,9 +21,9 @@ function Main({ isMobile }) {
           </>
         )}
         <p className="main__text">
-          I am a software developer at LETT DO. I like motorcycles, steaks,
-          sleeping 9 hours a day, sunny weather and cats 🐈. One day I'll learn
-          React Native and will develop cool apps also!
+          I am a fullstack developer. I develop web and mobile applications
+          using Next.js, React, Node.js and React Native. I like motorcycles,
+          steaks, sleeping 9 hours a day, sunny weather and cats 🐈.
         </p>
         <hr />
         <blockquote className="main__quote">

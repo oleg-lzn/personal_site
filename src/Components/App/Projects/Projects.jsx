@@ -6,24 +6,23 @@ function Projects() {
   return (
     <div className="projects">
       <h1 className="projects__title">My Projects</h1>
-      <p className="projects__description">
-        I'm happy to showcase my recent works. Some of them are the result of my
-        education at TripleTen, others are personal passion projects that
-        showcase my skills and interests.
-      </p>
+      <p className="projects__description">Here are my works.</p>
       <ul className="projects__list">
-        {projectsData.map((item) => {
-          return (
-            <Project
-              key={item.id}
-              name={item.name}
-              description={item.description}
-              feature={item.feature}
-              link={item.link}
-              image={item.image}
-            />
-          );
-        })}
+        {projectsData.map(
+          ({ id, name, description, techStack, link, image, liveDemo }) => {
+            return (
+              <Project
+                key={id}
+                name={name}
+                description={description}
+                techStack={techStack}
+                link={link}
+                image={image}
+                liveDemo={liveDemo}
+              />
+            );
+          }
+        )}
       </ul>
     </div>
   );
