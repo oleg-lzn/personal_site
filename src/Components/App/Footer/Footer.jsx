@@ -1,11 +1,18 @@
 import SocialLinksFooter from "../Social_links_footer/Social_links_footer";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { useState, useLayoutEffect } from "react";
 
-function Footer({ props }) {
+function Footer() {
+  const currentYear = new Date().getFullYear();
+  const [year, setYear] = useState(currentYear);
+
+  useLayoutEffect(() => {
+    setYear(currentYear);
+  }, [currentYear]);
+
   return (
     <footer className="footer">
-      <p className="footer__text">© 2025 by Oleg Luzenin on React </p>
+      <p className="footer__text">© {year} by Oleg Luzenin on React </p>
       <div className="footer__contact">
         <div className="footer__write_section">
           <p className="footer__email-text">Write </p>
