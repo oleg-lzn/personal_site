@@ -45,7 +45,7 @@ export const projectsData = [
     techStack: "React, Node.js, MongoDB, OpenWeather API",
     link: "https://github.com/oleg-lzn/se_project_react",
     image: desktop_wtwr,
-    liveDemo: "https://www.wtwr.euronatura.pt/",
+    liveDemo: "se-project-react-two.vercel.app",
   },
   {
     id: 5,
